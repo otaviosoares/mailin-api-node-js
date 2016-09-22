@@ -1,6 +1,6 @@
 var rest = require('restler');
 
-Mailin = rest.service(function(base_url,api_key,timeout) {
+var Mailin = rest.service(function(base_url,api_key,timeout) {
 	this.base_url = base_url;
 	this.api_key = api_key;
 	this.timeout = timeout;
@@ -861,3 +861,5 @@ Mailin = rest.service(function(base_url,api_key,timeout) {
 		return this.delete_request("advanced/" + id,"");
 	}
 });
+
+module.exports = Mailin

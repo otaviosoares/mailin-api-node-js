@@ -3,7 +3,7 @@ var crypto = require('crypto');
 
 // Work in progress
 
-Mailin = rest.service(function(base_url,access_key,secret_key) {
+var Mailin = rest.service(function(base_url,access_key,secret_key) {
 	this.base_url = base_url;
 	this.access_key = access_key;
 	this.secret_key = secret_key;
@@ -231,3 +231,4 @@ delete_request:function(resource,input) {
 }
 });
 
+module.exports = Mailin
